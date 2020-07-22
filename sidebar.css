@@ -32,11 +32,13 @@ header{
 }
 a {
 	text-decoration: none;
+	color:white;
 }
 ul a:hover{
-	color:blue;
+	color:gold;
 	transition: color .5s ease;
 	text-decoration: none;
+	 background-color: transparent;
 }
 .fa {
   padding: 20px;
@@ -46,6 +48,12 @@ ul a:hover{
   text-decoration: none;
   border-radius: 50%;
 }
-
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
+}
 
 
