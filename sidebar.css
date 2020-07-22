@@ -1,59 +1,98 @@
-*{
+* {
 	margin:0px;
 	padding:0px;
 	font-family: sans-serif;
 
 }
-header{
-	text-align: right;
-	padding-right: 30px;
-	color: #fcf7c5;
-	margin: 50px;
-}
-#sidebar{
-	position:fixed;
-	width:45%;
+
+#sidebar {
+	position: fixed;
+	width: 45%;
 	height: 100%;
 	background: #000;
 	left: -45%;
 }
+
 #sidebar.active{
-	left:0px;
+	left: 0px;
 }
-#sidebar ul{
-	overflow:auto;
-}
-#sidebar ul li{
-	color: #fcf7c5;
-	padding: 50px 35px;
-	font-size: 1.0625rem;
-	list-style:none;
-	border-bottom: 1px solid rgba(100,100,100,0.3);
-}
+
 a {
 	text-decoration: none;
 	color:white;
 }
-ul a:hover{
-	color:gold;
-	transition: color .5s ease;
-	text-decoration: none;
-	 background-color: transparent;
-}
-.fa {
-  padding: 20px;
-  font-size: 80px;
-  width: 30px;
+
+.fa {  
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
-}
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-google-plus-g:hover,
-.fa-instagram:hover,
-.fa-youtube:hover {
-  color: #d5d5d5;
 }
 
+/*
+ * ===================================
+ * Sidebar Header
+ * ===================================
+ */
+.sidebar-header {
+  border-bottom: 1px solid #fff;
+  padding: 30px 0;
+}
+
+.sidebar-close {
+  font-size: 50px;
+  text-align: left;
+  color: #dcb200;
+  padding: 30px;
+}
+
+/*
+ * ===================================
+ * Sidebar Navigation
+ * ===================================
+ */
+.sidebar-navigation {
+  list-style: none;
+}
+
+.sidebar-navigation li {
+  border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+
+.sidebar-navigation li:last-child {
+  border-bottom: 0;
+}
+
+.sidebar-navigation li a {
+  color: #fcf7c5;
+  padding: 50px 35px;
+  font-size: 1.0625rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+.sidebar-navigation li a:hover {
+  color: gold;
+}
+
+
+/*
+ * ===================================
+ * Sidebar Footer
+ * ===================================
+ */
+.sidebar-footer {
+  padding: 40px 0;
+  border-top: 1px solid #fff;
+}
+
+.sidebar-footer a {
+  font-size: 50px;
+  color: white;
+  padding: 0 50px;
+  display: inline-block;
+  transition: all .3s ease;
+}
+
+.sidebar-footer a:hover {
+  color: gold;
+}
 
