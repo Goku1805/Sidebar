@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div id = "sidebar">
+		<a href="javascript:void(0);" class="icon" onclick="handleOnClick()">
+	    <i class="fa fa-bars"></i>
+  		</a>
+		<header>Cart</header><hr/>
+		<ul>
+			<li>HOME</li><hr />
+			<li>SHOP</li><hr />
+			<li>FAQs</li><hr />
+			<li>RECIPES</li><hr />
+			
+		</ul>
+		<footer> <h1> Instagram</h1> <h1> Instagram</h1><h1> Instagram</h1>  </footer>
+	</div>	
+<script>
+	
+	function handleOnClick(){
+		document.getElementById("sidebar").classList.toggle('active');
+	}
+</script>
+</body>
+
+</html>
