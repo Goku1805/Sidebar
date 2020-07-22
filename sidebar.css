@@ -32,10 +32,10 @@ header{
 hr{
 	border-bottom: #403b3b 1px solid;
 }
-#sidebar a{
+ a{
 	position:absolute;
 	padding: 14px 16px;
-	left: 600px;
+	left: 50px;
 	top:20px;
 	color: #151719;
 }
