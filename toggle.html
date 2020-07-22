@@ -5,35 +5,46 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<a href="javascript:void(0);" class="icon"style="position:absolute;padding: 14px 16px;	left: 50px;	top:20px;color:#151719;" onclick="handleOnClick()">
-	    <i class="fa fa-bars"style="font-size: 30px;"></i>
-  	</a>
-	<div id = "sidebar">
-		
-		 <i class="fa fa-times" style="font-size: 50px;text-align: left;color:#dcb200"aria-hidden="true"onclick="handleOnClick()"></i><hr/>
+	<a href="javascript:void(0);" class="icon" style="position:absolute;padding: 14px 16px;	left: 50px;	top:20px;color:#151719;" onclick="handleOnClick()">
+	  <i class="fa fa-bars"style="font-size: 30px;"></i>
+	</a>
 
-		<ul>
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">SHOP</a></li>
-			<li><a href="#">FAQs</a></li>
-			<li><a href="#">RECIPES</a></li>
-			
-		</ul>
-		<footer>
-		<a href="#"> <i class="fa fa-instagram" style="font-size: 30px;color:white;margin:10px"></i></a>
-		<a href="#"> <i class="fa fa-facebook" style="font-size: 30px;color:white;margin:10px"></i></a>
-		<a href="#"> <i class="fa fa-youtube" style="font-size: 30px;color:white ;margin:10px"></i></a>
-		<a href="#"> <i class="fa fa-twitter" style="font-size: 30px;color: white;margin:10px"></i></a>
-		</footer>
-		
-	</div>	
+	<div id="sidebar">
+		<div class="sidebar-header">
+			<a href="#" class="sidebar-close" aria-hidden="true" onclick="handleOnClick()">
+				<i class="fa fa-times"></i>
+			</a>
+		</div><!-- /.sidebar-header -->
 
-<script>
-	
-	function handleOnClick(){
-		document.getElementById("sidebar").classList.toggle('active');
-	}
-</script>
+		<div class="sidebar-content">
+			<ul class="sidebar-navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Show</a></li>
+				<li><a href="#">Faqs</a></li>
+				<li><a href="#">Recipes</a></li>
+			</ul>
+		</div><!-- /.sidebar-content -->
+
+		<footer class="sidebar-footer">
+			<a href="#">
+				<i class="fa fa-instagram" style=""></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-youtube"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</footer><!-- /.sidebar-footer -->
+	</div><!-- /#sidebar -->
+
+	<script>
+		function handleOnClick(){
+			document.getElementById("sidebar").classList.toggle('active');
+		}
+	</script>
 </body>
-
 </html>
